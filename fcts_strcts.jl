@@ -220,7 +220,7 @@ function init(par::Par)
     #
 
     # genetic-microbic values
-    zgm = gmvals(pp,pd)
+    zgm = gmvals(pp,pd,"γλνε")
 
     # (generative) developmental noise / environmental deviation
     e = rand(Normal(0,√𝔼E),n)

@@ -361,8 +361,6 @@ plt_vals = [
 
 ρmx = maximum(InfNan2Bye(plt_vals))
 
-theme(:vibrant)
-
 ργl∅ₚ = plot(1:T,μρᵧₗ∅,ribbon=0.5 .* σρᵧₗ∅,fillalpha=0.3,
     legend=false,
     title="Gene - Lineal",
