@@ -159,7 +159,7 @@ tspl∅ = plot(1:T,μz̄γλνε∅,ribbon=σz̄γλνε∅,fillalpha=0.3,
                 title="Post-Selected\n\n",
                 ylim=(0,ymx),
                 color=colorant"#ffb86c");
-plot!(1:T,μz̄γλν∅,ribbon=σz̄γλν∅,fillalpha=0.3,color=colorant"#bd93f9");
+plot!(1:T,μz̄γλν∅,ribbon=σz̄γλν∅,fillalpha=0.3,color=colorant"#56a0d3");
 plot!(1:T,μz̄γλ∅,ribbon=σz̄γλ∅,fillalpha=0.3,color=colorant"#50fa7b");
 plot!(1:T,μz̄γ∅,ribbon=σz̄γ∅,fillalpha=0.3,color=colorant"#ff79c6");
 xlabel!("Host Generations");
@@ -170,7 +170,7 @@ tsplψ = plot(1:T,μz̄γλνεψ, ribbon=σz̄γλνεψ,fillalpha=0.3,
                 title="Pre-Selected\n\n",
                 ylim=(0,ymx),
                 color=colorant"#ffb86c");
-plot!(1:T,μz̄γλνψ,ribbon=σz̄γλνψ,fillalpha=0.3, label="GLN",color=colorant"#bd93f9");
+plot!(1:T,μz̄γλνψ,ribbon=σz̄γλνψ,fillalpha=0.3, label="GLN",color=colorant"#56a0d3");
 plot!(1:T,μz̄γλψ,ribbon=σz̄γλψ,fillalpha=0.3, label="GL",color=colorant"#50fa7b");
 plot!(1:T,μz̄γψ,ribbon=σz̄γψ,fillalpha=0.3, label="G",color=colorant"#ff79c6");
 xlabel!("Host Generations\n");

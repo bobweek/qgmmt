@@ -33,8 +33,8 @@ popar = Par(nr = nr,
 
 poμΔz̄, poμAᵧβ, poμAₗβ, poμAₙβ, poμAᵩβ = runs(popar)
 
-mn = floor(minimum([poμΔz̄; prμΔz̄; poμAᵧβ; poμAₗβ; poμAₙβ; poμAᵩβ; prμAᵧβ; prμAₗβ; prμAₙβ; prμAᵩβ])-1)
-mx = ceil(maximum([poμΔz̄; prμΔz̄; poμAᵧβ; poμAₗβ; poμAₙβ; poμAᵩβ; prμAᵧβ; prμAₗβ; prμAₙβ; prμAᵩβ])+2)
+mn = floor(minimum([poμΔz̄; prμΔz̄; poμAᵧβ; poμAₗβ; poμAₙβ; poμAᵩβ; prμAᵧβ; prμAₗβ; prμAₙβ; prμAᵩβ]))
+mx = ceil(maximum([poμΔz̄; prμΔz̄; poμAᵧβ; poμAₗβ; poμAₙβ; poμAᵩβ; prμAᵧβ; prμAₗβ; prμAₙβ; prμAᵩβ]))
 
 #
 # plotting simulated data
