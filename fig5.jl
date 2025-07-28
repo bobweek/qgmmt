@@ -57,7 +57,7 @@ scpl = scatter(prμΔz̄,prμAₙβ, legend=false, title="GLN", mc=colorant"#bd9
 plot!([mn,mx],[mn,mx], color=colorant"#8be9fd");
 push!(prpls,scpl)
 
-scpl = scatter(prμΔz̄,prμAᵩβ, legend=false, title="GLNE", mc=colorant"#ffb86c", ms=2, showaxis=false);
+scpl = scatter(prμΔz̄,prμAᵩβ, legend=false, title="GLNV", mc=colorant"#ffb86c", ms=2, showaxis=false);
 ylabel!("\nPre-Selection", guide_position=:right);
 plot!([mn,mx],[mn,mx], color=colorant"#8be9fd");
 push!(prpls,scpl)

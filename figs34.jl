@@ -55,7 +55,7 @@ z̄γλνε∅, Pγλνε∅ = ts_ensemble(parγλνε∅,T,ts_rep)
 
 ymx = maximum(μz̄γλνε∅)
 
-# no ext
+# no novel
 
 parγλν∅ = Par(nr = nr, 
     𝔼P = 75.0,
@@ -166,7 +166,7 @@ xlabel!("Host Generations");
 ylabel!("\nMean Trait Value");
 
 tsplψ = plot(1:T,μz̄γλνεψ, ribbon=σz̄γλνεψ,fillalpha=0.3,
-                label="GLNE", 
+                label="GLNV", 
                 title="Pre-Selected\n\n",
                 ylim=(0,ymx),
                 color=colorant"#ffb86c");
@@ -252,7 +252,7 @@ function ts_ensemble_detailed(par::Par,T::Int64,ts_rep::Int64)
             # mean lineal abundance for at each taxa across hosts (at time t for rep i)
             m̄ₙ[i,:,t] = vec(mean(mₙ,dims=1))
 
-            # external microbe abundances
+            # novel microbe abundances
             mₑ = ts[t].mE
 
             # mean lineal abundance for at each taxa across hosts (at time t for rep i)
@@ -270,7 +270,7 @@ function ts_ensemble_detailed(par::Par,T::Int64,ts_rep::Int64)
             mρᵧₙ[t,i] = mean(ρᵧₙ)
             sρᵧₙ[t,i] = std(ρᵧₙ)
 
-            # correlation between allele counts and externals
+            # correlation between allele counts and novels
             ρᵧₑ = abs.(vec(cor(c,mₑ)))
             ρᵧₑ = InfNan2Bye(ρᵧₑ)
             mρᵧₑ[t,i] = mean(ρᵧₑ)
@@ -378,7 +378,7 @@ ylabel!("\n|Correlation|");
 
 ργe∅ₚ = plot(1:T,μρᵧₑ∅,ribbon=0.5 .* σρᵧₑ∅,fillalpha=0.3,
     legend=false, 
-    title="Gene - External",
+    title="Gene - Novel",
     ylim=(0,ρmx),
     color=colorant"#ffb86c",
     guide_position=:right, guidefonthalign=:left, 
